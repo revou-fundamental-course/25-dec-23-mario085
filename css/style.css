@@ -1,0 +1,130 @@
+html {
+    scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {  
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    margin: auto;
+    padding: 2rem 3rem;
+}
+
+.judul {
+    text-align: center;
+}
+
+.sub-judul {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    margin-block: 3rem;
+}
+
+header button {
+    padding: 1rem 1.5rem;
+    color: white;
+    background-color: #2880B9;
+    border: none;
+    border-radius: 5px;
+}
+
+main .informasi h1 {
+    margin-block: 4rem;
+    text-align: center;
+    padding: 3rem;
+    background-color: #2880B9;
+    color: white;    
+}
+
+main .informasi {
+    margin-bottom: 3rem;
+}
+
+main img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    margin-bottom: 3rem;
+}
+
+main .hitung {
+    display: flex;
+    flex-direction: column;
+}
+
+main .hitung h1 {
+    margin-block: 4rem;
+    text-align: center; 
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.form input {
+    padding: 0.5rem;
+}
+
+.hasil {
+    margin-block: 3rem;
+}
+
+main .button-hitung {
+    text-align: center;
+}
+
+main .button-reset {
+    text-align: end;
+}
+
+main .button-hitung2 {
+    padding: 1rem 1.5rem;
+    font-weight: bold;
+    color: white;
+    background-color: #2880B9;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+}
+
+main .button-reset2 {
+    padding: 1rem 1.5rem;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(219, 96, 35);
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.pembatas {
+    border: 2px solid red;
+}
+
+.luasSection {
+    display: block;
+}
+
+.kelilingSection {
+    display: none;
+}
+
+.error-message {
+    text-align: center;
+    color: red;
+    font-weight: bold;
+    font-size: x-large;
+}

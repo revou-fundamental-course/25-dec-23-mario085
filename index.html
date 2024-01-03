@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1 class="judul">Welcome to Katik</h1>
+        <div class="sub-judul">
+            <p>Hai Sobat, Selamat Datang di Katik :]</p>
+            <p>Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar</p>
+        </div>
+        <div class="buttons">
+            <button onclick="showLuasSection()">Luas Segitiga</button>
+            <button onclick="showKelilingSection()">Keliling Segitiga</button>
+        </div>
+    </header>
+
+    <!-- Section Luas -->
+    <section id="luasSection" class="luasSection">
+        <main>
+            <div class="informasi">
+                <h1 class="">Luas Segitiga</h1>
+                <img class="gambar" src="img/luas_segitiga.png" alt="">
+                <p>Rumus Luas Segitiga yaitu :</p>
+                <p>L = 1/2 * a * t</p>
+                <br>
+                <p>Dimana :</p>
+                <p>L = Luas</p>
+                <p>a = Panjang Alas</p>
+                <p>t = Tinggi</p>
+            </div>
+    
+            <div class="pembatas"></div>
+    
+            <div class="hitung">
+                <h1>Hitung Luas Segitiga</h1>
+                <div class="form">
+                    <input type="number" id="base" placeholder="Masukkan panjang alas" required>
+                    <input type="number" id="height" placeholder="Masukkan tinggi" required>
+                </div>
+                <div class="hasil">
+                    <p>L = 1/2 * a * t</p>
+                    <p>L = 1/2 * <span id="alas"></span> <span id="tinggi"></span></p>
+                    <p>L = <span id="result-luas"></span></p>
+                    <br>
+                    <p>Luas Segitiga adalah = <span id="result-luas2"></span> </p>
+                    <p id="luasErrorMessage" class="error-message"></p>
+                </div>
+                <div class="button-hitung">
+                    <button onclick="validateHitungLuas()" class="button-hitung2">
+                        Hitung
+                    </button>
+                </div>
+                <div class="button-reset">
+                    <button onclick="resetCalculator()" class="button-reset2">
+                        Reset
+                    </button>
+                </div>
+            </div>
+        </main>
+    </section>
+
+
+    <!-- Section Keliling -->
+    <section id="kelilingSection" class="kelilingSection">
+        <main>
+            <div class="informasi">
+                <h1 class="">Keliling Segitiga</h1>
+                <img class="gambar" src="img/keliling_segitiga.png" alt="">
+                <p>Rumus Keliling Segitiga yaitu :</p>
+                <p>L = S1 + S2 + S3</p>
+                <br>
+                <p>Dimana :</p>
+                <p>S1 = Sisi A</p>
+                <p>S2 = Sisi B</p>
+                <p>S3 = Sisi C</p>
+            </div>
+    
+            <div class="pembatas"></div>
+    
+            <div class="hitung">
+                <h1>Hitung Keliling Segitiga</h1>
+                <div class="form">
+                    <input type="number" id="sisiA" placeholder="Masukkan Sisi A" required>
+                    <input type="number" id="sisiB" placeholder="Masukkan Sisi B" required>
+                    <input type="number" id="sisiC" placeholder="Masukkan Sisi C" required>
+                </div>
+                <div class="hasil">
+                    <p>K = S + S + S</p>
+                    <p>K = <span id="sisi1"></span> <span id="sisi2"></span> <span id="sisi3"></span></p>
+                    <p>K = <span id="result-keliling"></span></p>
+                    <br>
+                    <p>Keliling Segitiga adalah = <span id="result-keliling2"></span> </p>
+                    <p id="kelilingErrorMessage" class="error-message"></p>
+                </div>
+                <div class="button-hitung">
+                    <button onclick="validateHitungKeliling()" class="button-hitung2">
+                        Hitung
+                    </button>
+                </div>
+                <div class="button-reset">
+                    <button onclick="resetCalculator()" class="button-reset2">
+                        Reset
+                    </button>
+                </div>
+            </div>
+        </main>
+    </section>
+
+</body>
+</html>
